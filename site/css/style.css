@@ -2,6 +2,7 @@
 {
 	margin: 0;
 	padding: 0;
+	border:0;
 }
 
 body
@@ -49,9 +50,10 @@ header nav
 
 header nav ul li a
 {
-	padding-right: 30px;
+	padding-right: 20px;
 	font-weight: bold;
 	color: white;
+	letter-spacing: 0.05em;
 	transition: all 0.5s ease-in;
 }
 
@@ -63,7 +65,7 @@ header nav ul li a:hover
 
 .img1
 {
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(..//images/slider1.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(..//images/slider1.jpg);
 	background-size: 100%;
 	transition: 3s;
 }
@@ -78,16 +80,18 @@ header nav ul li a:hover
 
 .slider h2
 {
-	padding: 10px;
 	font-weight: bold;
 	color: white;
 	margin-top: 220px;
+    letter-spacing: 0.025em;
 }
 
 .slider p
 {
 	color: white;
 	font-size: 16px;
+	font-style: italic;
+	letter-spacing: 0.025em;
 }
 
 .slider span
@@ -103,11 +107,12 @@ header nav ul li a:hover
 
 .slider a.btn-half
 {
-	margin-top: 10px;
+	margin-top: 30px;
 	background-color: #0B0B61;
 	color: white;
 	font-weight: bold;
 	box-shadow: 0px 0px 20px 0px;
+	letter-spacing: 0.025em;
 }
 
 .slider a.btn-half:hover
@@ -118,14 +123,14 @@ header nav ul li a:hover
 
 .img2
 {
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(..//images/slider2.jpg);
-	background-size: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(..//images/slider2.jpg);
+	background-size: 100% 100%;
 }
 
 .img3
 {
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(..//images/slider3.jpg);
-    background-size: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(..//images/slider3.jpg);
+    background-size: 100% 100%;
 
 }
 
@@ -134,4 +139,58 @@ header nav ul li a:hover
 	position: relative;
 	padding: 100px 0px;
 	text-align: center;
+}
+
+.sub-heading
+{
+	position: relative;
+	margin-bottom: 75px;
+}
+
+.sub-heading:before
+{
+	content:"";
+	position: absolute;
+	top: 100%;
+	left:50%;
+	margin-left: -3%; 
+	width: 6%;
+	height: 1px;
+	background-color: #0B0B61;
+	z-index: 1;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+.sub-heading:hover:before
+{
+	width: 24%;
+	margin-left: -12px;
+}
+
+.sub-heading:after
+{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12%;
+	width: 24%;
+	height: 1px;
+	background-color: #A9D0F5;
+}
+
+.sub-heading p
+{
+	color: #818181;
+	font-style: italic;
+	font-size: 16px;
+	display: inline-block;
+	padding: 0px 0px;
+	position: relative;
+	line-height: 24px;
+	letter-spacing: 0.025em;
 }
