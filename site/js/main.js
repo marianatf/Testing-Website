@@ -22,7 +22,7 @@ jQuery(document).ready(function(){
 			container:".sliderpager",
 			pageAnchorBuilder:false
 		}
-	});
+});
 
 	$(window).scroll(function(){
 

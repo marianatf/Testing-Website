@@ -1,7 +1,7 @@
 *,html,body
 {
+	margin: 0;
 	padding: 0;
-	border:0;
 }
 
 body
@@ -11,7 +11,7 @@ body
 
 header
 {
-	height: 100px;
+	height: 112px;
 	line-height: 112px;
 	position: fixed;
 	z-index: 1;
@@ -35,41 +35,44 @@ ul
 ul li
 {
 	display: inline-block;
+
 }
 
 header nav
 {
-	float: right;
+	float:right;
 }
 
 .logo img
 {
+	margin-top: 7px;
 	width: 160px;
 	height: 90px;
 }
 
 header nav ul li a
 {
-	padding-right: 20px;
+	padding-right: 15px;
 	font-weight: bold;
 	color: white;
 	letter-spacing: 0.05em;
-	transition: all 0.5s ease-in;
+	transition: all 0.5s ease;
+	margin-top: 0;
 }
 
 header nav ul li a:hover
 {
 	text-decoration: none;
-	color: #A9D0F5;
+	color: blue;
 }
 
 .img1
 {
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(..//images/slider1.jpg);		
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider1.jpg);
 	background-size: 100%;
 }
 
-.slider,.slider ul,.slider ul li 
+.slider, .slider ul, .slider ul li
 {
 	height: 710px;
 	width: 100%;
@@ -80,6 +83,7 @@ header nav ul li a:hover
 .slider h2
 {
 	font-weight: bold;
+	font-size: 45px;
 	color: white;
 	margin-top: 220px;
     letter-spacing: 0.025em;
@@ -90,7 +94,7 @@ header nav ul li a:hover
 	color: white;
 	font-size: 16px;
 	font-style: italic;
-	letter-spacing: 0.025em;
+	letter-spacing: 0.05em;
 }
 
 .slider span
@@ -107,137 +111,47 @@ header nav ul li a:hover
 .slider a.btn-half
 {
 	margin-top: 30px;
-	background-color: #0B0B61;
-	color: white;
+	background-color: white;
+	color: #1E1D1D;
 	font-weight: bold;
-	box-shadow: 0px 0px 20px 0px #A9D0F5;
 	letter-spacing: 0.025em;
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px 0px #1E1D1D;
+
 }
 
 .slider a.btn-half:hover
 {
-	background-color: #1E1D1D;
+	background-color: #A9D0F5;
+	transition: 0.3s ease-in;
+}
+
+.slider a.btn-full
+{
+	margin-top: 30px;
+	background-color: white;
+	color: #1E1D1D;
+	font-weight: bold;
+	letter-spacing: 0.025em;
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px 0px #1E1D1D;
+}
+
+.slider a.btn-full:hover
+{
+	background-color: #A9D0F5;
 	transition: 0.3s ease-in;
 }
 
 .img2
 {
-	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(..//images/slider2.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider2.jpg);
 	background-size: 100% 100%;
 }
 
 .img3
 {
-	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(..//images/slider3.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider3.jpg);
     background-size: 100% 100%;
 
 }
-
-.intro-area
-{
-	position: relative;
-	padding: 100px 0px;
-	text-align: center;
-}
-
-.sub-heading
-{
-	position: relative;
-	margin-bottom: 75px;
-}
-
-
-.sub-heading p
-{
-	color: #818181;
-	font-style: italic;
-	font-size: 16px;
-	display: inline-block;
-	margin: 20px;
-	padding: 0px 0px;
-	position: relative;
-	line-height: 24px;
-	letter-spacing: 0.025em;
-}
-
-.intro-block
-{
-	position: relative;
-	background-color: white;
-	margin: 25px 0px 0px;
-	text-align: center;
-	padding: 80px 35px 50px;
-	letter-spacing: 0.025em;
-	border-radius: 15px;
-
-}
-
-.intro-block:hover, .intro-block.active
-{
-	background: #A9D0F5;
-
-}
-
-.intro-block:hover
-{
-	transition: .6s ease;
-	-webkit-transition: .6s ease;
-	-moz-transition: .6s ease;
-	-o-transition: .6s ease;
-	-ms-transition: .6s ease;
-}
-
-.intro-block .intro-icon
-{
-	position: absolute;
-	top: -31px;
-	left: 50%;
-}
-
-.intro-block .fas
-{
-	width: 63px;
-	height: 63px;
-	margin-left: -32.5px;
-	font-size: 30px;
-	line-height: 2;
-	color: white;
-	background: #0B0B61;
-	border-radius: 50%;
-	box-shadow: 0px 0px 0px 10px #A9D0F5;
-}
-
-.intro-block h3 
-{
-	font-size: 20px;
-	color: #1E1D1D;
-	font-weight: bold;
-	margin:10px;
-	letter-spacing: 0.025em;
-}
-
-.intro-block p
-{
-	color: #1E1D1D;
-	padding: 8px;
-    letter-spacing: 0.025em;
-    font-style: italic;
-    padding-bottom:15px;
-}
-
-
-.intro-block a.btn-half
-{
-	background-color: #0B0B61;
-	color: white;
-	font-weight: bold;
-	letter-spacing: 0.025em;
-	box-shadow: 0px 0px 10px 0px gray;
-}
-
-.intro-block a.btn-half:hover
-{
-	background-color: #1E1D1D;
-	transition: 0.2s ease-in;
-}
-
