@@ -11,20 +11,29 @@ body
 
 header
 {
-	height: 112px;
-	line-height: 112px;
+	height: 95px;
+	line-height: 95px;
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-
 
 }
 
 .secondary
 {
-	background-color: #1E1D1D;
+	background-color: white;
 	box-shadow: 0px 0px 17px 0px;
 	transition: all 0.6s ease-in;
+}
+
+.secondary a
+{
+	color: #1E1D1D;
+}
+
+.secondary a:hover
+{
+	color: #818181;
 }
 
 ul
@@ -45,7 +54,7 @@ header nav
 
 .logo img
 {
-	margin-top: 7px;
+	margin: 7px 0px 7px;
 	width: 160px;
 	height: 90px;
 }
@@ -53,24 +62,19 @@ header nav
 header nav ul li a
 {
 	padding-right: 15px;
+	font-size: 13px;
 	font-weight: bold;
 	color: white;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.055em;
 	transition: all 0.5s ease;
-	margin-top: 0;
 }
 
 header nav ul li a:hover
 {
 	text-decoration: none;
-	color: blue;
+	color: #A9D0F5;
 }
 
-.img1
-{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider1.jpg);
-	background-size: 100%;
-}
 
 .slider, .slider ul, .slider ul li
 {
@@ -92,7 +96,7 @@ header nav ul li a:hover
 .slider p
 {
 	color: white;
-	font-size: 16px;
+	font-size: 17px;
 	font-style: italic;
 	letter-spacing: 0.05em;
 }
@@ -111,7 +115,7 @@ header nav ul li a:hover
 .slider a.btn-half
 {
 	margin-top: 30px;
-	background-color: white;
+	background-color:#A9D0F5;
 	color: #1E1D1D;
 	font-weight: bold;
 	letter-spacing: 0.025em;
@@ -122,14 +126,14 @@ header nav ul li a:hover
 
 .slider a.btn-half:hover
 {
-	background-color: #A9D0F5;
+	background-color: white;
 	transition: 0.3s ease-in;
 }
 
 .slider a.btn-full
 {
 	margin-top: 30px;
-	background-color: white;
+	background-color: #A9D0F5;
 	color: #1E1D1D;
 	font-weight: bold;
 	letter-spacing: 0.025em;
@@ -139,8 +143,14 @@ header nav ul li a:hover
 
 .slider a.btn-full:hover
 {
-	background-color: #A9D0F5;
+	background-color: white;
 	transition: 0.3s ease-in;
+}
+
+.img1
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider1.jpg);
+	background-size: 100%;
 }
 
 .img2
@@ -154,4 +164,130 @@ header nav ul li a:hover
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider3.jpg);
     background-size: 100% 100%;
 
+}
+
+
+
+.intro-area
+{
+	position: relative;
+	padding: 100px 0px;
+	background-color: white;
+	text-align: center;
+}
+
+.intro-area h2
+{
+	color: #1E1D1D;
+	font-weight: bold;
+}
+
+.sub-heading
+{
+	position: relative;
+	margin-bottom: 75px;
+}
+
+.sub-heading p
+{
+	color: #818181;
+	font-style: italic;
+	font-size: 17px;
+	display: inline-block;
+	margin: 20px;
+	padding: 0px 0px;
+	position: relative;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+}
+
+.intro-block
+{
+	position: relative;
+	margin: 25px 0px 0px;
+	text-align: center;
+	padding: 80px 35px 50px;
+	letter-spacing: 0.025em;
+	border-radius: 15px;
+
+}
+
+.intro-block .intro-icon
+{
+	position: absolute;
+	top: -31px;
+	left: 50%;
+}
+
+.intro-block .fas
+{
+	width: 63px;
+	height: 63px;
+	margin-left: -32.5px;
+	font-size: 30px;
+	line-height: 2;
+	color: white;
+	background: #08088A;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 10px #A9D0F5;
+}
+
+.intro-block h3 
+{
+	margin-top: 8px;
+	font-size: 20px;
+	color: #0B0B3B;
+	font-weight: bold;
+	letter-spacing: 0.025em;
+}
+
+.intro-block p
+{
+	color: #818181;
+	font-size: 15px;
+	padding: 8px;
+    letter-spacing: 0.025em;
+    font-style: italic;
+    padding-bottom:15px;
+}
+
+
+.intro-block a.btn-half
+{
+	background-color: white;
+	margin-top: -15px;
+	color: #1E1D1D;
+	font-weight: bold;
+	letter-spacing: 0.025em;
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px 0px #BDBDBD;
+	padding: 10px;
+}
+
+.intro-block a.btn-half:hover
+{
+	color:#08088A;
+	transition: 0.2s ease-in;
+	box-shadow: 0px 0px 15px 0px #A9D0F5;
+}
+
+
+.clients .carousel-indicators
+{
+	bottom: -30px;
+}
+
+.carousel-inner img
+{
+	width: 300px;
+	height: 300px;
+	text-align: center;
+    box-shadow: 0px 0px 10px 0px #BDBDBD;
+    margin-left: 21%;
+    margin-top: 15px;
+}
+
+.clients .carousel-indicators li
+{
+	background-color: #BDBDBD;
 }
