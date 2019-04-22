@@ -2,21 +2,27 @@
 {
 	margin: 0;
 	padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+body 
+{
+	height: 2000px;
 }
 
-body
+header .carousel-inner .item 
 {
-	height: 3000px;
+	height: 100vh;
 }
 
-header
+header ul li a
 {
-	height: 95px;
-	line-height: 95px;
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-
+	color:black;
+	padding-right: 15px;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 0.055em;
+	transition: all 0.5s ease;
 }
 
 .secondary
@@ -36,46 +42,149 @@ header
 	color: #818181;
 }
 
-ul
+.navbar-inverse 
 {
-	list-style: none;
+
+	background-color: transparent !important;
+	border-color: transparent !important;
 }
 
-ul li
-{
-	display: inline-block;
-
-}
-
-header nav
-{
-	float:right;
-}
-
-.logo img
+.logo
 {
 	margin: 7px 0px 7px;
-	width: 160px;
-	height: 90px;
+	width: 180px;
+	height: 100px;
 }
 
-header nav ul li a
+.img1
 {
-	padding-right: 15px;
-	font-size: 13px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider1.jpg);
+	background-size: 100%;
+}
+
+.img2
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider2.jpg);
+	background-size: 100% 100%;
+}
+
+.img3
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider3.jpg);
+    background-size: 100% 100%;
+
+}
+
+.navbar-inverse .navbar-brand 
+{	
+	height: 112px;
+	line-height: 112px;
+	position: fixed;
+	z-index: 1;
+}
+
+.nav .navbar-nav .navbar-right 
+{
+	margin:25px 0;
+
+}
+
+.navbar-inverse .navbar-nav > li > a 
+{
+	color: black;
+	text-transform: uppercase;
+}
+
+.banner
+{
+	-webkit-background-size:cover;
+	background-size:center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+
+.carousel-caption
+{
+	padding-bottom: 150px !important;
+	text-align: center;
+}
+
+.carousel-caption h2 
+{
 	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 45px;
 	color: white;
-	letter-spacing: 0.055em;
-	transition: all 0.5s ease;
+	margin-top: 220px;
+    letter-spacing: 0.025em;
 }
 
-
-
-header nav ul li a:hover
+.carousel-caption h2 span 
 {
-	text-decoration: none;
-	color: #A9D0F5;
+	color: #D8D8D8;
 }
+
+.carousel-caption p
+{
+	color: white;
+	padding: 10px;
+	font-size: 17px;
+	font-style: italic;
+	letter-spacing: 0.05em;
+}
+
+.carousel-caption a.btn-half
+{
+	margin: 20px 10px;
+	color: white;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 20px;
+	border: 2px solid white;
+
+}
+
+.carousel-caption a.btn-half:hover
+{
+	background-color: #0B0B3B;
+	transition: 0.3s ease-in;
+}
+
+.carousel-caption a.btn-full
+{
+	margin: 20px 10px;
+	color: white;
+	font-weight: bold;
+	padding: 10px 30px;
+	border-radius: 20px;
+	border: 2px solid white;
+}
+
+.carousel-caption a.btn-full:hover
+{
+	background-color: #0B0B3B;
+	transition: 0.3s ease-in;
+}
+
+.carousel-control.right 
+{
+	background-image: none;
+}
+
+.carousel-control.left 
+{
+	background-image: none;
+}
+
+.carousel-indicators .active
+{
+	background-color: white !important;
+	border-color: white;
+	padding: 5px;
+	margin: 6px;
+}
+
 
 
 .intro-area
@@ -136,10 +245,10 @@ header nav ul li a:hover
 	margin-left: -32.5px;
 	font-size: 30px;
 	line-height: 2;
-	color: white;
-	background: #08088A;
+	color: #0B0B3B;
+	background: #D8D8D8;
 	border-radius: 50%;
-	box-shadow: 0px 0px 0px 10px #A9D0F5;
+	box-shadow: 0px 0px 0px 10px #0B0B3B;
 }
 
 .intro-block h3 
@@ -171,23 +280,26 @@ header nav ul li a:hover
 	letter-spacing: 0.025em;
 	border-radius: 20px;
 	box-shadow: 0px 0px 15px 0px #BDBDBD;
-	padding: 10px;
+	padding: 10px 30px;
 }
 
 .intro-block a.btn-half:hover
 {
-	color:#08088A;
+	color:#0B0B3B;
 	transition: 0.2s ease-in;
-	box-shadow: 0px 0px 15px 0px #A9D0F5;
+	box-shadow: 0px 0px 15px 0px #0B0B3B;
 }
 
 
 .clients .carousel-indicators
 {
 	bottom: -30px;
+	/*falta agregar el color para que se note*/
+
 }
 
-.carousel-inner img
+
+.carousel-inner1 img
 {
 	width: 300px;
 	height: 300px;
@@ -197,12 +309,56 @@ header nav ul li a:hover
     margin-top: 15px;
 }
 
-.clients .carousel-indicators li
+.clients .carousel-indicators1 li
 {
 	background-color: #BDBDBD;
 }
 
-.carousel-inner1 img
-{	width: 2160px;
-	height: 1440px;
+.mapa {
+
+}
+
+.footers{
+	color:#fff;
+	background: #222222;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.carousel-caption {
+		padding-bottom: 350px;
+
+	}
+	.carousel-caption h2{
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-inverse .navbar-brand {
+		font-size: 30px;
+		padding: 20px 15px;
+	}
+	.navbar-collapse {
+		background: rgba(0,0,0,0.5);
+	}
+	.carousel-caption{
+		padding-bottom: 120px;
+	}
+	.carousel-option h2 {
+		font-size: 25px;
+	}
+	.carousel-option h3 {
+		font-size:18px; 
+	}
+	.carousel-option a {
+		padding:10px 25px;
+	}
 }
