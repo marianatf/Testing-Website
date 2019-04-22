@@ -28,12 +28,12 @@ jQuery(document).ready(function(){
 
 		var top = $(window).scrollTop();
 		if(top>=60){
-			$("header").addClass('secondary');
+			$("navbar-brand").addClass('secondary');
 		}
 		else 
-			if($("header").hasClass('secondary')){
+			if($("navbar-brand").hasClass('secondary')){
 
-				$("header").removeClass('secondary');
+				$("navbar-brand").removeClass('secondary');
 			}
 
 	});
