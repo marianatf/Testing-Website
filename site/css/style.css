@@ -69,6 +69,8 @@ header nav ul li a
 	transition: all 0.5s ease;
 }
 
+
+
 header nav ul li a:hover
 {
 	text-decoration: none;
@@ -76,41 +78,7 @@ header nav ul li a:hover
 }
 
 
-.slider, .slider ul, .slider ul li
-{
-	height: 710px;
-	width: 100%;
-	color: white;
-	text-align: center;
-}
 
-.slider h2
-{
-	font-weight: bold;
-	font-size: 45px;
-	color: white;
-	margin-top: 220px;
-    letter-spacing: 0.025em;
-}
-
-.slider p
-{
-	color: white;
-	font-size: 17px;
-	font-style: italic;
-	letter-spacing: 0.05em;
-}
-
-.slider span
-{
-	color: #A9D0F5;
-}
-
-.slider a
-{
-	padding: 10px 40px; 
-	margin-right: 10px;
-}
 
 .slider a.btn-half
 {
@@ -147,10 +115,16 @@ header nav ul li a:hover
 	transition: 0.3s ease-in;
 }
 
+.img21 {
+	background-size: 100% 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
 .img1
 {
+	position: absolute;
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider1.jpg);
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 .img2
