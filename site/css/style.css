@@ -78,70 +78,6 @@ header nav ul li a:hover
 }
 
 
-
-
-.slider a.btn-half
-{
-	margin-top: 30px;
-	background-color:#A9D0F5;
-	color: #1E1D1D;
-	font-weight: bold;
-	letter-spacing: 0.025em;
-	border-radius: 20px;
-	box-shadow: 0px 0px 15px 0px #1E1D1D;
-
-}
-
-.slider a.btn-half:hover
-{
-	background-color: white;
-	transition: 0.3s ease-in;
-}
-
-.slider a.btn-full
-{
-	margin-top: 30px;
-	background-color: #A9D0F5;
-	color: #1E1D1D;
-	font-weight: bold;
-	letter-spacing: 0.025em;
-	border-radius: 20px;
-	box-shadow: 0px 0px 15px 0px #1E1D1D;
-}
-
-.slider a.btn-full:hover
-{
-	background-color: white;
-	transition: 0.3s ease-in;
-}
-
-.img21 {
-	background-size: 100% 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-}
-
-.img1
-{
-	position: absolute;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider1.jpg);
-	background-size: 100% 100%;
-}
-
-.img2
-{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider2.jpg);
-	background-size: 100% 100%;
-}
-
-.img3
-{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider3.jpg);
-    background-size: 100% 100%;
-
-}
-
-
-
 .intro-area
 {
 	position: relative;
@@ -264,4 +200,9 @@ header nav ul li a:hover
 .clients .carousel-indicators li
 {
 	background-color: #BDBDBD;
+}
+
+.carousel-inner1 img
+{	width: 2160px;
+	height: 1440px;
 }
