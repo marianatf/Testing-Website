@@ -384,12 +384,22 @@ nav, .navbar-inverse .navbar-brand
 
 /* FOOTER */
 .panel-footer {
+  text-align: center;
   margin-top: 100px;
   padding-top: 35px;
   padding-bottom: 30px;
   background-color: white !important;
   border: 0px;
   color: #818181;
+}
+.panel-footer ul
+{
+	list-style: none;
+}
+
+.panel-footer ul li
+{
+	display: block;
 }
 .panel-footer .fas
 {
@@ -404,10 +414,10 @@ nav, .navbar-inverse .navbar-brand
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#contact, #address {
+#contact, #services, #company {
   line-height: 2;
 }
-#contact > span, #aliados > span {
+#contact > span {
 	color: #818181;
 	font-size: 13px;
 	padding: 8px;
@@ -415,13 +425,13 @@ nav, .navbar-inverse .navbar-brand
     margin-top: 15px;
 }
 .panel-footer h3 {
+	text-align: center;
 	font-size: 20px;
 	color: #1E1D1D;
 	margin-top: 30px;
 	margin-bottom: -10px;
 	font-weight: bold;
 	letter-spacing: 0.05em;
-	text-align: left;
 }
 
 /* END FOOTER */
