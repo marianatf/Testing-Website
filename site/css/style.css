@@ -7,7 +7,7 @@
 
 body 
 {
-	height: 2000px;
+	height: 1800px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -33,79 +33,61 @@ nav, .navbar-inverse .navbar-brand
 	line-height: 112px;	
 	position: fixed;
 }
-
 .navbar-inverse  
 {
 
 	background-color: transparent !important;
 	border-color: transparent !important;
 }
-
-
 .secondary 
 {
 	background-color: white !important;
 	box-shadow: 0px 0px 17px 0px;
 	transition: all 0.6s ease-in;
 }
+.secondary .navbar-nav > li > a {
+	color: black !important;
 
-.secondary ul
-{
-	color: #1E1D1D !important;
 }
-
-.secondary ul:hover
+.secondary .navbar-nav > li > a:hover
 {
 	color: #818181;
 }
-
 .logo
 {
 	margin: 7px 0px 7px;
 	width: 180px;
 	height: 100px;
 }
-
 .img1
 {
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider1.jpg);
 	background-size: 100%;
 }
-
 .img2
 {
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider2.jpg);
 	background-size: 100% 100%;
 }
-
 .img3
 {
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/slider3.jpg);
     background-size: 100% 100%;
-
 }
-
-
 .nav .navbar-nav .navbar-right 
 {
 	margin:25px 0;
-
 }
-
 .navbar-inverse .navbar-nav > li > a 
 {
-	color: white!important;
+	color: white;
 	margin-top: 30px;
 	text-transform: uppercase;
 }
-
 .navbar-inverse .navbar-nav > li > a:hover
 {
 	color: #D8D8D8!important;
-
 }
-
-
 .banner
 {
 	-webkit-background-size:cover;
@@ -115,12 +97,12 @@ nav, .navbar-inverse .navbar-brand
 }
 
 
+/* JUMBO SLIDER */
 .carousel-caption
 {
 	padding-bottom: 150px !important;
 	text-align: center;
 }
-
 .carousel-caption h2 
 {
 	font-weight: bold;
@@ -130,12 +112,10 @@ nav, .navbar-inverse .navbar-brand
 	margin-top: 220px;
     letter-spacing: 0.025em;
 }
-
 .carousel-caption h2 span 
 {
 	color: white;
 }
-
 .carousel-caption p
 {
 	color: white;
@@ -144,7 +124,6 @@ nav, .navbar-inverse .navbar-brand
 	font-style: italic;
 	letter-spacing: 0.05em;
 }
-
 .carousel-caption a.btn-half
 {
 	margin: 20px 10px;
@@ -155,13 +134,11 @@ nav, .navbar-inverse .navbar-brand
 	border: 2px solid white;
 
 }
-
 .carousel-caption a.btn-half:hover
 {
 	background-color: #0B0B3B;
 	transition: 0.3s ease-in;
 }
-
 .carousel-caption a.btn-full
 {
 	margin: 20px 10px;
@@ -171,23 +148,19 @@ nav, .navbar-inverse .navbar-brand
 	border-radius: 20px;
 	border: 2px solid white;
 }
-
 .carousel-caption a.btn-full:hover
 {
 	background-color: #0B0B3B;
 	transition: 0.3s ease-in;
 }
-
 .carousel-control.right 
 {
 	background-image: none;
 }
-
 .carousel-control.left 
 {
 	background-image: none;
 }
-
 .carousel-indicators .active
 {
     padding:4px;
@@ -195,9 +168,10 @@ nav, .navbar-inverse .navbar-brand
 	background-color: white;
 	border-color: white;
 }
+/* END JUMBO SLIDER */
 
 
-
+/* SUBHEADING */
 .intro-area
 {
 	position: relative;
@@ -205,7 +179,6 @@ nav, .navbar-inverse .navbar-brand
 	background-color: white;
 	text-align: center;
 }
-
 .intro-area h2
 {
 	color: #1E1D1D;
@@ -214,14 +187,12 @@ nav, .navbar-inverse .navbar-brand
 	letter-spacing: 0.025em;
 
 }
-
 .sub-heading
 {
 	position: relative;
 	margin-bottom: 75px;	
 
 }
-
 .sub-heading p
 {
 	text-transform: uppercase;
@@ -234,7 +205,6 @@ nav, .navbar-inverse .navbar-brand
 	line-height: 24px;
 	letter-spacing: 0.025em;
 }
-
 .intro-block
 {
 	position: relative;
@@ -245,14 +215,12 @@ nav, .navbar-inverse .navbar-brand
 	border-radius: 15px;
 
 }
-
 .intro-block .intro-icon
 {
 	position: absolute;
 	top: -31px;
 	left: 50%;
 }
-
 .intro-block .fas
 {
 	width: 63px;
@@ -265,15 +233,13 @@ nav, .navbar-inverse .navbar-brand
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 10px #0B0B3B;
 }
-
 .intro-block h3 
 {
 	font-size: 20px;
-	color: #0B0B3B;
+	color: #1E1D1D;
 	font-weight: bold;
 	letter-spacing: 0.05em;
 }
-
 .intro-block p
 {
 	color: #818181;
@@ -283,72 +249,65 @@ nav, .navbar-inverse .navbar-brand
     font-style: italic;
     margin-top: 15px;
 }
-
-
 .intro-block a.btn-half
 {
 	background-color: white;
 	margin-top: -5px;
 	color: #1E1D1D;
 	font-weight: bold;
+	font-style: italic;
 	letter-spacing: 0.025em;
 	border-radius: 20px;
-	box-shadow: 0px 0px 15px 0px #BDBDBD;
+	box-shadow: 0px 0px 8px 0px #BDBDBD;
 	padding: 10px 30px;
 	margin-bottom: 50px;
 }
-
 .intro-block a.btn-half:hover
 {
 	color:#0B0B3B;
 	transition: 0.2s ease-in;
-	box-shadow: 0px 0px 15px 0px #0B0B3B;
+	box-shadow: 0px 0px 8px 0px #0B0B3B;
 }
 
-
-.carousel-inner1 img
-{
-	width: 300px;
-	height: 300px;
-	text-align: center;
-    box-shadow: 0px 0px 10px 0px #BDBDBD;
-    margin-left: 21%;
-    margin-top: 15px;
-}
-
+/* MINI SLIDER */
 .clients .carousel-indicators
 {
 	bottom: -50px;
 }
-
 .clients .carousel-indicators li
 {
 	background-color: #818181;
 	border-color: #818181;
 }
-
 .carousel-inner img
 {
 	width: 310px;
 	height: 310px;
-    border-radius: 20px;
-    margin-left: 20%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 8px;    	
+    box-shadow: 0px 0px 8px 0px #BDBDBD;
 }
+/* END SUBHEADING */
 
+
+/* UBIQUENOS */
 .maps
 {
 	width: 100%;
+	display: block;
+	margin-top: -110px;
 }
-
-.map-frame {
+.map-frame 
+{
     width: 100%;
-    height: 350px;
+    height: 500px;
     position: relative;
+    box-shadow: 0px 0px 8px 0px #BDBDBD;
 }
-
-
 .maps .fas
 {
 	width: 63px;
@@ -360,21 +319,80 @@ nav, .navbar-inverse .navbar-brand
 	border-radius: 50%;
 	box-shadow: 0px 0px 0px 10px #0B0B3B;
 }
-
 .maps h3 
 {
-	padding: 12px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	font-size: 20px;
 	color: #0B0B3B;
 	font-weight: bold;
 	letter-spacing: 0.025em;
 }
+/* END UBIQUENOS */
 
-.footers{
-	color:#fff;
-	background: #222222;
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 100px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #F2F2F2 !important;
+  border: 0px;
+  color: #818181;
+}
+.panel-footer .fas
+{
+	font-size: 15px;
+	margin: 10px;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#contact, #address {
+  line-height: 2;
+}
+#contact > span, #aliados > span {
+	color: #818181;
+	font-size: 17px;
+	padding: 8px;
+    letter-spacing: 0.025em;
+    font-style: italic;
+    margin-top: 15px;
+}
+.panel-footer h3 {
+	font-size: 20px;
+	color: #1E1D1D;
+	margin-top: 30px;
+	margin-bottom: -10px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	text-align: left;
+}
+#aliados h3
+{
+	text-align: center;
+}
+#aliados ul
+{
+	list-style: none;
 }
 
+#aliados ul li
+{
+	display: inline-block;
+}
+#aliados img
+{
+	width: 100px;
+	height: 100px;
+	display: block;
+	box-shadow: 0px 0px 8px 0px #BDBDBD;
+  	margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 8px;   
+    border-radius: 8px; 
+}
+/* END FOOTER */
 
 
 
