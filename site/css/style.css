@@ -41,12 +41,14 @@ nav, .navbar-inverse .navbar-brand
 }
 .secondary 
 {
-	background-color: white !important;
-	box-shadow: 0px 0px 17px 0px;
-	transition: all 0.1s ease-in;
+	background-image: linear-gradient(to right,#0B0B3B,black);
+	/*background-image: linear-gradient(to right, #0B0B3B, white) !important;
+	/*background-color: #0B0B3B !important;*/
+	box-shadow: 0px 0px 6px 0px #818181;
+	transition: all 0.6s ease-in;
 }
 .secondary .navbar-nav > li > a {
-	color: black !important;
+	color: white !important;
 
 }
 .secondary .navbar-nav > li > a:hover
@@ -419,7 +421,7 @@ nav, .navbar-inverse .navbar-brand
 }
 #contact > span {
 	color: #818181;
-	font-size: 13px;
+	font-size: 17px;
 	padding: 8px;
     letter-spacing: 0.055em;
     margin-top: 15px;
@@ -433,6 +435,23 @@ nav, .navbar-inverse .navbar-brand
 	font-weight: bold;
 	letter-spacing: 0.05em;
 }
+.panel-footer ul li a
+{
+	text-decoration: none;
+    color: #818181;
+	font-size: 13px;
+	padding: 8px;
+	line-height: 0.3px;
+    letter-spacing: 0.055em;
+    margin-top: 15px;
+	transition: all 0.5s ease;
+}
+.panel-footer ul li a:hover
+{
+	color: #1E1D1D !important;
+	font-weight: bold;
+}
+
 
 /* END FOOTER */
 
