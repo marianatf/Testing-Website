@@ -47,6 +47,10 @@ nav, .navbar-inverse .navbar-brand
 	box-shadow: 0px 0px 6px 0px #818181;
 	transition: all 0.6s ease-in;
 }
+#border
+{
+	border-right: black;
+}
 .secondary .navbar-nav > li > a {
 	color: white !important;
 
@@ -60,6 +64,11 @@ nav, .navbar-inverse .navbar-brand
 	margin: 7px 0px 7px;
 	width: 180px;
 	height: 100px;
+}
+.img4
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/quienes-somos.jpg);
+	background-size: 100%;
 }
 .img1
 {
