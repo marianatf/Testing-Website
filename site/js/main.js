@@ -24,6 +24,8 @@ jQuery(document).ready(function(){
 		}
 });
 
+
+
 	$(window).scroll(function(){
 
 		var top = $(window).scrollTop();
@@ -37,5 +39,19 @@ jQuery(document).ready(function(){
 			}
 
 	});
+
+
+
+	// ===== Scroll to Top ==== NO FUNCIONAAAA
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('#button');
+    } else {
+      btn.removeClass('#button');
+    }
+  });
+
+
 
 });

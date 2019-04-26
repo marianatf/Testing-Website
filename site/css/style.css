@@ -22,7 +22,7 @@ header ul li a
 	padding-right: 15px;
 	font-size: 13px;
 	font-weight: bold;
-	letter-spacing: 0.055em;
+	letter-spacing: 0.08em;
 	transition: all 0.5s ease;
 }
 
@@ -38,18 +38,14 @@ nav, .navbar-inverse .navbar-brand
 
 	background-color: transparent !important;
 	border-color: transparent !important;
+	
 }
 .secondary 
 {
 	background-image: linear-gradient(to right,#0B0B3B,black);
-	/*background-image: linear-gradient(to right, #0B0B3B, white) !important;
-	/*background-color: #0B0B3B !important;*/
+	transition: all 1s ease-in !important;
 	box-shadow: 0px 0px 6px 0px #818181;
-	transition: all 0.6s ease-in;
-}
-#border
-{
-	border-right: black;
+
 }
 .secondary .navbar-nav > li > a {
 	color: white !important;
@@ -64,11 +60,6 @@ nav, .navbar-inverse .navbar-brand
 	margin: 7px 0px 7px;
 	width: 180px;
 	height: 100px;
-}
-.img4
-{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/quienes-somos.jpg);
-	background-size: 100%;
 }
 .img1
 {
@@ -404,23 +395,12 @@ nav, .navbar-inverse .navbar-brand
   padding-bottom: 30px;
   background-color: white !important;
   border: 0px;
-  color: #818181;list-style: circle;
+  color: #818181;
 }
-
 .panel-footer ul li
 {
 	
 	display: block;
-}
-.panel-footer .fas
-{
-	font-size: 15px;
-	margin: 10px;
-}
-.panel-footer .fab
-{
-	font-size: 22px;
-	margin: 10px;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
@@ -428,13 +408,6 @@ nav, .navbar-inverse .navbar-brand
 #contact, #services, #products {
   line-height: 2;
   text-align: left;
-}
-#contact > span {
-	color: #818181;
-	font-size: 13px;
-	padding: 8px;
-    letter-spacing: 0.055em;
-    margin-top: 15px;
 }
 .panel-footer h3 {
     text-align: left;
@@ -444,9 +417,10 @@ nav, .navbar-inverse .navbar-brand
 	margin-bottom: -10px;
 	font-weight: bold;
 	letter-spacing: 0.05em;	
+	transition: all 0.2s ease-in;
 }
 
-.panel-footer a h3
+.panel-footer a
 {
 	text-decoration: none !important;
 	transition: all 0.5s ease;
@@ -467,11 +441,40 @@ nav, .navbar-inverse .navbar-brand
   background-image: linear-gradient(to right,#0B0B3B,black);
 }
 
-
 /* END FOOTER */
 
 
-
+/* BACK TO TOP */
+#button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0B0B3B;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 40px;
+  right: -10px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+#button:hover {
+  background-color: #1E1D1D;;
+}
+#button:active {
+  background-color: #1E1D1D;;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
 
 
 
