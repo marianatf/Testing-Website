@@ -102,7 +102,7 @@ nav, .navbar-inverse .navbar-brand
 /* JUMBO SLIDER */
 .carousel-caption
 {
-	padding-bottom: 120px !important;
+	padding-bottom: 50px !important;
 	text-align: center;
 }
 .carousel-caption h2 
@@ -459,8 +459,9 @@ nav, .navbar-inverse .navbar-brand
   right: -10px;
   transition: background-color .3s;
   z-index: 1000;
+  display: none;
 }
-#button:hover {
+ #button:hover {
   background-color: #1E1D1D;;
 }
 #button:active {
@@ -510,4 +511,34 @@ nav, .navbar-inverse .navbar-brand
 	.carousel-option a {
 		padding:10px 25px;
 	}
+}
+
+
+
+/* QUIENES SOMOS*/
+.img4
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/quienesomos.jpg);
+	width: 100%;
+	height: 300px;
+}
+#footer-image
+{ 
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/footerimage.jpg);
+	margin-top: 3px;
+	width: 100%;
+	height:200px;
+	display: block;
+	margin-bottom: -40px;
+	background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-top: 5px solid #1E1D1D;
+ }
+
+.footer-image
+{
+	margin-bottom: -120px;	
 }

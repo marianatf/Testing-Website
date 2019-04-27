@@ -42,15 +42,22 @@ jQuery(document).ready(function(){
 
 
 
-	// ===== Scroll to Top ==== NO FUNCIONAAAA
+// ===== Scroll to Top ==== NO FUNCIONAAAA
 
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      btn.addClass('#button');
-    } else {
-      btn.removeClass('#button');
-    }
-  });
+	$(window).scroll(function(){
+		if($(this).scrollTop()>40){
+			$('#button').fadeIn();
+		} else{
+			$('#button').fadeOut();
+		}
+	});
+
+
+
+	$("#button").click(function(){
+		$('html ,body').animate({scrollTop:0},800);
+
+	});
 
 
 
