@@ -54,6 +54,7 @@ nav, .navbar-inverse .navbar-brand
 .secondary .navbar-nav > li > a:hover
 {
 	color: #818181 !important;
+	font-size: 14px !important;
 }
 .logo
 {
@@ -89,6 +90,7 @@ nav, .navbar-inverse .navbar-brand
 .navbar-inverse .navbar-nav > li > a:hover
 {
 	color: #818181!important;
+		font-size: 14px !important;
 }
 .banner
 {
@@ -102,7 +104,7 @@ nav, .navbar-inverse .navbar-brand
 /* JUMBO SLIDER */
 .carousel-caption
 {
-	padding-bottom: 50px !important;
+	padding-bottom: 80px !important;
 	text-align: center;
 }
 .carousel-caption h2 
@@ -514,15 +516,14 @@ nav, .navbar-inverse .navbar-brand
 }
 
 
-
-/* QUIENES SOMOS*/
+/*QUIENES SOMOS*/
 .img4
 {
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/quienesomos.jpg);
 	width: 100%;
 	height: 300px;
 }
-#footer-image
+#footer-image1
 { 
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/footerimage.jpg);
 	margin-top: 3px;
@@ -538,7 +539,66 @@ nav, .navbar-inverse .navbar-brand
     border-top: 5px solid #1E1D1D;
  }
 
-.footer-image
+.footer-image1
 {
 	margin-bottom: -120px;	
+}
+
+/*CATALOGO*/
+.img5
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/catalogo.jpg);
+	width: 100%;
+	height: 300px;
+}
+
+#footer-image2
+{ 
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(..//images/footerimage3.jpg);
+	margin-top: 3px;
+	width: 100%;
+	height:200px;
+	display: block;
+	margin-bottom: -40px;
+	background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-top: 5px solid #1E1D1D;
+ }
+
+.footer-image2
+{
+	margin-bottom: -120px;	
+}
+
+.catalogo
+{
+	background-color: white;
+	border: 5px solid #0B0B3B;
+
+}
+.catalogo a.btn-half
+{
+	margin-top: 5px;
+	margin-bottom: -20px;
+}
+
+#catalogo
+{
+	
+	margin-top: 10px;
+	position: relative;
+	display: block;
+}
+#catalogo p {
+	text-align: left;
+}
+
+#catalogo hr
+{
+	
+	margin: 40px;
+
 }
