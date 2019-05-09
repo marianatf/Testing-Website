@@ -45,7 +45,7 @@ jQuery(document).ready(function(){
 // ===== Scroll to Top ==== NO FUNCIONAAAA
 
 	$(window).scroll(function(){
-		if($(this).scrollTop()>40){
+		if($(this).scrollTop()>30){
 			$('#button').fadeIn();
 		} else{
 			$('#button').fadeOut();
@@ -55,7 +55,7 @@ jQuery(document).ready(function(){
 
 
 	$("#button").click(function(){
-		$('html ,body').animate({scrollTop:0},800);
+		$('html ,body').animate({scrollTop:0},0);
 
 	});
 
