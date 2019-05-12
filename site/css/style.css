@@ -488,38 +488,6 @@ nav, .navbar-inverse .navbar-brand
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-	.carousel-caption {
-		padding-bottom: 350px;
-
-	}
-	.carousel-caption h2{
-		font-size: 50px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.navbar-inverse .navbar-brand {
-		font-size: 30px;
-		padding: 20px 15px;
-	}
-	.navbar-collapse {
-		background: rgba(0,0,0,0.5);
-	}
-	.carousel-caption{
-		padding-bottom: 120px;
-	}
-	.carousel-option h2 {
-		font-size: 25px;
-	}
-	.carousel-option h3 {
-		font-size:18px; 
-	}
-	.carousel-option a {
-		padding:10px 25px;
-	}
-}
-
 
 /*QUIENES SOMOS*/
 .img4
@@ -727,3 +695,93 @@ border-radius: 35px 0px 35px 0px;
 {
 	padding-right: 25px;
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.carousel-caption {
+		padding-bottom: 350px;
+
+	}
+	.carousel-caption h2{
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width:529px)
+{
+	.carousel-option h2 {
+		font-size: 6px;
+	}
+	.carousel-option h3 {
+		font-size:13px; 
+	}
+	.carousel-caption h2{
+		font-size: 36px;
+	}
+	.carousel-caption p{
+		font-size: 12px;
+	}
+	#bs-example-navbar-collapse-1{
+		margin-top: 100px;
+
+	}
+	.navbar-collapse {
+		background: rgba(0,0,0,0.7);
+	}
+	#carousel-cat h2{
+
+		font-size: 20px;
+	}
+	#carousel-qui h2{
+		font-size: 20px;
+	}
+	.container h2{
+		font-size: 20px;
+	}
+	.container p{
+		font-size: 16px;
+	}
+	.container h3{
+		font-size: 18px;
+	}
+	#carousel-sis h2{
+		font-size: 20px;
+	}
+	#caption-p h2{
+		font-size: 28px;
+	}
+	#caption-p div{
+		margin-top: 10px;
+	}
+
+}
+
+
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+	.navbar-inverse .navbar-brand {
+		font-size: 30px;
+		padding: 20px 15px;
+	}
+	.navbar-collapse {
+		background: rgba(0,0,0,0.7);
+	}
+	
+	.carousel-option h2 {
+		font-size: 6px;
+	}
+	.carousel-option h3 {
+		font-size:13px; 
+	}
+	.carousel-caption h2{
+		font-size: 36px;
+	}
+	.carousel-caption p{
+		font-size: 16px;
+	}
+	#bs-example-navbar-collapse-1{
+		margin-top: 100px;
+
+	}
+
+}
+
