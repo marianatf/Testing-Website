@@ -726,10 +726,9 @@ border-radius: 35px 0px 35px 0px;
 
 	}
 	.navbar-collapse {
-		background: rgba(0,0,0,0.7);
+		background-color: black;
 	}
 	#carousel-cat h2{
-
 		font-size: 20px;
 	}
 	#carousel-qui h2{
@@ -753,7 +752,17 @@ border-radius: 35px 0px 35px 0px;
 	#caption-p div{
 		margin-top: 10px;
 	}
-
+	.navbar-toggle button{
+		margin-top: 90px;
+	}
+	.navbar-toggle {
+		margin-top: 100px;
+	}
+	.cotainer {
+		border-collapse: separate;
+		border-spacing: 5px 10px;
+		
+	}
 }
 
 
@@ -763,7 +772,7 @@ border-radius: 35px 0px 35px 0px;
 		padding: 20px 15px;
 	}
 	.navbar-collapse {
-		background: rgba(0,0,0,0.7);
+		background-color: black;
 	}
 	
 	.carousel-option h2 {
