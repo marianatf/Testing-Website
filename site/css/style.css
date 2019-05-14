@@ -741,7 +741,7 @@ border-radius: 35px 0px 35px 0px;
 		display: none;
 	}
 	#bs-example-navbar-collapse-1{
-		margin-top: -20px;
+		margin-top: 1px;
 
 	}
 	.navbar-collapse {
@@ -779,6 +779,9 @@ border-radius: 35px 0px 35px 0px;
 	.navbar-toggle {
 		margin-top: 100px;
 	}
+	.navbar-header .navbar-toggle {
+		margin-top: -8px;
+	}
 	.container {
 		border-collapse: separate;
 		border-spacing: 5px 10px;
@@ -797,15 +800,33 @@ border-radius: 35px 0px 35px 0px;
 
 
 @media only screen and (min-width: 530px) and (max-width: 767px) {
-	.navbar-inverse .navbar-brand {
-		font-size: 30px;
-		padding: 20px 15px;
+    nav, .navbar-inverse .navbar-brand 
+    {	
+	height: 120px;
+	line-height: 120px;	
+	position: fixed;
+}
+	.logo {
+	margin-top: 3px;
+	height: 30px;
+	width: 135px;
 	}
 	.navbar-inverse {
 	background-image: linear-gradient(to right,#0B0B3B,black);
 	box-shadow: 0px 0px 6px 0px #818181;
 	}
-	
+		#carousel-sis h2{
+		font-size: 20px;
+		margin-bottom: 1px;
+	}
+		#carousel-qui h2{
+		font-size: 20px;
+		margin-bottom: 1px;
+	}
+		#carousel-cat h2{
+		font-size: 20px;
+		margin-bottom: 1px;
+	}
 	.carousel-option h2 {
 		font-size: 6px;
 	}
@@ -819,7 +840,7 @@ border-radius: 35px 0px 35px 0px;
 		font-size: 16px;
 	}
 	#bs-example-navbar-collapse-1{
-		margin-top: 100px;
+		margin-top: 50px;
 
 	}
 		.navbar-collapse {
@@ -834,9 +855,32 @@ border-radius: 35px 0px 35px 0px;
 	{
 		margin-top: -50px;
 	}
+		.navbar-toggle {
+		margin-top: 100px;
+	}
+	.navbar-header .navbar-toogle {
+		margin-top: -300px;
+	}
 }
 
-
+@media (min-width: 785px) {
+.banner
+{
+	-webkit-background-size:cover;
+	background-size:center center;
+	background-repeat: no-repeat;
+	height: 700px;
+}
+}
+@media (min-width: 1200px) {
+.banner
+{
+	-webkit-background-size:cover;
+	background-size:center center;
+	background-repeat: no-repeat;
+	height: 640px;
+}
+}
 
 
 
