@@ -2,13 +2,13 @@
 {
 	margin: 0;
 	padding: 0;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Quicksand, sans-serif;
  }
 
 body 
 {
 	height: 1800px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Quicksand;
 }
 
 header .carousel-inner .item 
@@ -709,6 +709,21 @@ border-radius: 35px 0px 35px 0px;
 
 @media only screen and (max-width:529px)
 {
+	nav, .navbar-inverse .navbar-brand 
+{	
+	height: 100px;
+	line-height: 100px;	
+	position: fixed;
+}
+	.logo {
+	margin-top: -40px;
+	height: 30px;
+	width: 135px;
+	}
+	.navbar-inverse {
+	background-image: linear-gradient(to right,#0B0B3B,black);
+	box-shadow: 0px 0px 6px 0px #818181;
+	}
 	.carousel-option h2 {
 		font-size: 6px;
 	}
@@ -716,23 +731,34 @@ border-radius: 35px 0px 35px 0px;
 		font-size:13px; 
 	}
 	.carousel-caption h2{
-		font-size: 36px;
+		font-size: 25px;
 	}
 	.carousel-caption p{
-		font-size: 12px;
+		font-size: 16px;
+		text-align: left;
+	}
+    .carousel-caption br{
+		display: none;
 	}
 	#bs-example-navbar-collapse-1{
-		margin-top: 100px;
+		margin-top: -20px;
 
 	}
 	.navbar-collapse {
-		background-color: black;
+		text-align: center;
+		background-color: #0B0B3B;
+	}
+	.navbar-collapse a {
+		font-size: 15px;
+		margin-top: -50px;
 	}
 	#carousel-cat h2{
 		font-size: 20px;
+		margin-bottom: -10px;
 	}
 	#carousel-qui h2{
 		font-size: 20px;
+		margin-bottom: -10px;
 	}
 	.container h2{
 		font-size: 20px;
@@ -745,23 +771,27 @@ border-radius: 35px 0px 35px 0px;
 	}
 	#carousel-sis h2{
 		font-size: 20px;
-	}
-	#caption-p h2{
-		font-size: 28px;
+		margin-bottom: -10px;
 	}
 	#caption-p div{
 		margin-top: 10px;
 	}
-	.navbar-toggle button{
-		margin-top: 90px;
-	}
 	.navbar-toggle {
 		margin-top: 100px;
 	}
-	.cotainer {
+	.container {
 		border-collapse: separate;
 		border-spacing: 5px 10px;
-		
+	}
+	.carousel-inner #contactenos {
+		display: none;
+	}
+	.navbar-header .navbar-toogle {
+		margin-top: 50px;
+	}
+	.navbar-collapse li
+	{
+		margin-top: -50px;
 	}
 }
 
@@ -771,8 +801,9 @@ border-radius: 35px 0px 35px 0px;
 		font-size: 30px;
 		padding: 20px 15px;
 	}
-	.navbar-collapse {
-		background-color: black;
+	.navbar-inverse {
+	background-image: linear-gradient(to right,#0B0B3B,black);
+	box-shadow: 0px 0px 6px 0px #818181;
 	}
 	
 	.carousel-option h2 {
@@ -791,6 +822,21 @@ border-radius: 35px 0px 35px 0px;
 		margin-top: 100px;
 
 	}
-
+		.navbar-collapse {
+		text-align: center;
+		background-color: #0B0B3B;
+	}
+	.navbar-collapse a {
+		font-size: 15px;
+		margin-top: -50px;
+	}
+	.navbar-collapse li
+	{
+		margin-top: -50px;
+	}
 }
+
+
+
+
 
