@@ -1,64 +1,27 @@
-jQuery(document).ready(function(){
-
-	"use strict";
-	$('#slider-carousel').carouFredSel({
-		responsive:true,
-		width:'100%',
-		circular:true,
-		scroll:{
-				items:1,
-				duration:500,
-				pauseOnHover:true,
+$(document).ready(function() {
+	$('.gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
 		},
-		auto:true,
-		items:{
-				visible:{
-					min:1,
-					max:1
-				},
-				height:"variable"
-		},
-		pagination:{
-			container:".sliderpager",
-			pageAnchorBuilder:false
-		}
-});
-
-
-
-	$(window).scroll(function(){
-
-		var top = $(window).scrollTop();
-		if(top>=60){
-			$("nav").addClass('secondary');
-		}
-		else 
-			if($("nav").hasClass('secondary')){
-
-				$("nav").removeClass('secondary');
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return  '<medium>&copy Carmen Zamora</medium>';
 			}
-
-	});
-
-
-
-// ===== Scroll to Top ==== NO FUNCIONAAAA
-
-	$(window).scroll(function(){
-		if($(this).scrollTop()>30){
-			$('#button').fadeIn();
-		} else{
-			$('#button').fadeOut();
 		}
 	});
-
-
-
-	$("#button").click(function(){
-		$('html ,body').animate({scrollTop:0},0);
-
-	});
-
-
-
 });
+
+// Random 
+var imagesArray = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"];
+function displayImage(){
+    var num = Math.floor(Math.random() * 7); // 0...6
+}
+var img_rnd = new Array ("1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg");
+var i = Math.floor(4*Math.random());
