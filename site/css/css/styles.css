@@ -1,0 +1,237 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Merienda One', cursive;
+}
+
+body {
+	background: black !important;
+}
+
+/******************** Navbar */
+nav {
+	height: 105px;
+	width: 100%;
+}
+nav.navbar {
+	background: black;
+	border: none;
+	border-bottom: 4px solid black;
+	position: relative;
+	border-radius: 0;
+}
+
+.openBtn {
+	text-decoration: none !important;
+	position: absolute; 
+	margin-top: 40px;
+	font-size: 18px;
+	letter-spacing: 0.08em;
+	color: #ccc;
+	font-family: 'Merienda One', cursive;
+	text-transform: uppercase;
+	left: 90%;
+}
+.openBtn:hover {
+    color: white;
+    transition: 0.2s ease;
+
+}
+img.navbar-brand {
+	height: 140px;
+	width: 280px;
+	margin-top: -15px;
+	position: absolute;
+    left: 50%;
+    margin-left: -140px !important;  /* 50% of logo width */
+    display: block;
+}
+
+@media (max-width: 767px) {
+	nav {
+	height: 160px !important;
+	width: 100%;
+	}
+	.openBtn {
+	font-size: 14px;
+	position: absolute;
+    left: 43%;
+    display: block;
+    margin-top:110px;
+	}
+	img.navbar-brand {
+	margin-top: 5px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	nav {
+	height: 160px !important;
+	width: 100%;
+	}
+	.openBtn {
+	font-size: 18px;
+	position: absolute;
+    left: 45%;
+    display: block;
+    margin-top:110px;
+	}
+	img.navbar-brand {
+	margin-top: 5px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	nav {
+	height: 180px !important;
+	width: 100%;
+	}
+	.openBtn {
+	font-size: 18px;
+	position: absolute;
+    left: 45%;
+    display: block;
+    margin-top:120px;
+	}
+	img.navbar-brand {
+	margin-top: 5px;
+	}
+
+}
+@media (min-width: 1200px) { 
+
+}
+/* End Navbar */
+
+
+
+/********************  Nav Overlay */
+.overlay {
+	position: fixed;
+	bottom: 0;
+	left: 0; /*appear from left*/
+	width: 100%;
+	height: 0%;
+	background: rgba(0,0,0,.9);
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all 0.5s;
+}
+.overlay__content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.overlay p, .overlay a {
+	padding: 10px;
+	color: #ccc;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+}
+.overlay p:hover, .overlay a:hover {
+	color: #fff;
+}
+.overlay .closeBtn {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-size: 50px;
+	text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+	.overlay .closeBtn {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-size: 100px;
+}
+	.overlay p, .overlay a {
+	padding: 10px;
+	color: #ccc;
+	font-size: 50px;
+	text-decoration: none;
+	display: block;
+}
+	}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.overlay .closeBtn {
+	position: absolute;
+	top: 20px;
+	right: 150px;
+	font-size: 100px;
+}
+	.overlay p, .overlay a {
+	padding: 10px;
+	color: #ccc;
+	font-size: 50px;
+	text-decoration: none;
+	display: block;
+} 
+}
+@media (min-width: 1200px) { 
+
+}
+/* End navbar overlay */
+
+
+/********************  Gallery Section */
+
+.gallery-section {
+	width: 100%;
+	margin-top: -20px;
+}
+.inner-width{
+	width: 100%;
+	margin: auto;
+}
+
+.gallery-section .gallery {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+.gallery-section .image {
+	flex: 25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.gallery-section .image img {
+	width: 100%;
+	height: 100%;
+	padding: none;
+	border: none;
+	
+}
+.image {
+	filter: brightness(105%);
+}
+.gallery-section .image:hover {
+	transition: 0.8s ease;
+	transform: scale(0.95) ;
+	border-radius: 10px;
+	filter: brightness(107%);
+}
+
+
+/* responsive */
+@media screen and (max-width: 960px){
+	.gallery-section .image {
+		flex: 33.33%;
+}
+
+@media screen and (max-width: 768px){
+	.gallery-section .image {
+		flex: 25%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.gallery-section .image {
+		flex: 50%;
+	}
