@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Carmen Zamora Gallery</title>
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/animate.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Magnific Popup -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Return to top -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+	<!-- Efectos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-------------------------------- Navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+            <img class="navbar-brand logo" src="images/logo.png">
+            <a href="#" class="openBtn" onclick="openNav()">About</a>
+            <a href="index.html" class="refresh" onclick="hola()">Refresh</a>
+    		</div>
+    	</div>
+	</nav>
+	<!-- End navbar -->
+
+<!-------------------------------- Navbar Overlay -->
+	<div class="container">
+	<div class="container-fluid">
+	<div id="nav" class="overlay ">
+		<a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+		<div class="overlay__content">
+			
+			<p>Carmen Zamora...</p>
+
+		</div>
+	</div>
+	</div>
+	</div>
+	<!-- End Overlay -->
+
+
+<!-------------------------------- Gallery Section -->
+
+<div class="gallery-section">
+	<div class="inner-width">
+	<div class="gallery">
+	
+	<script src="js/aos.js"></script>
+
+ 		<script>
+ 		var bu = new Array(80);
+		bu = bu.sort(function() {return Math.random() - 0.5});
+				for(i=1; i<=120; i++){
+			bu[i]=i;
+		}
+		bu = bu.sort(function() {return Math.random() - 0.5});
+ 	
+      AOS.init();
+		
+    	
+    	for( i = 1; i<=119; i++ ){
+
+    	document.write("<a href=\"images/"+bu[i]+".jpg\" class=\"image\"><img data-aos=\"zoom-in-up\" src=\"resized/"+bu[i]+".jpg\" id=\"capt\" <a/> ");
+    	}
+	</script> 
+		<!--<script class="prueba1" id="prueba">
+		var bu = new Array(80);
+		bu = bu.sort(function() {return Math.random() - 0.5});
+				for(i=1; i<=120; i++){
+			bu[i]=i;
+		}
+		bu = bu.sort(function() {return Math.random() - 0.5});
+    			for( i = 1; i<=119; i++ ){
+    	
+
+    	document.write("<a href=\"images/"+bu[i]+".jpg\" class=\"image\"><img src=\"resized/"+bu[i]+".jpg\" <a/> ");
+
+    	}
+	</script>
+	<a href="images/1.jpg" data-lightbox="mygallery" class="image"><img src="rezised/1.jpg" alt=""></a>-->
+</div>
+</div>
+</div>
+	<!-- End Gallery Section -->
+
+
+
+<!-------------------------------- Footer -->
+
+
+<!-- Return to Top -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="#" id="button" title="Back to top"></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

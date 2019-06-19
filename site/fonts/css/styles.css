@@ -1,0 +1,388 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Courgette', cursive;
+}
+
+body {
+	background: black !important;
+}
+
+/******************** Navbar */
+nav {
+	height: 112px;
+	width: 100%;
+}
+
+nav.navbar {
+	background: black;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	border-radius: 0;
+}
+.openBtn {
+	text-decoration: none !important;
+	position: absolute; 
+	margin-top: 38px;
+	font-size: 18px;
+	letter-spacing: 0.08em;
+	color: #ccc;
+	font-family: 'Open Sans Condensed', sans-serif;
+	left: 88.5%;
+	padding: 4px 15px;
+	border: 2px solid #ccc;
+	text-transform: uppercase;
+	font-weight: bold;
+		border-radius: 5px;
+}
+.openBtn:hover {
+    color: black;
+    background: white;
+    border: 2px solid white;
+    transition: 0.3s ease-in;
+
+}
+.refresh {
+	text-decoration: none !important;
+	position: absolute; 
+	margin-top: 38px;
+	font-size: 18px !important;
+	letter-spacing: 0.08em;
+	color: #ccc;
+	font-family: 'Open Sans Condensed', sans-serif;
+	right: 87.5%;
+	padding: 4px 15px;
+	border: 2px solid #ccc !important;
+	text-transform: uppercase;
+	font-weight: bold !important;
+	border-radius: 5px;
+}
+.refresh:hover {
+    color: black;
+    background: white;
+    border: 2px solid white !important;
+    transition: 0.3s ease-in;
+
+}
+img.navbar-brand {
+	height: 140px;
+	width: 280px;
+	margin-top: -10px;
+	position: absolute;
+    left: 50%;
+    margin-left: -140px !important;  /* 50% of logo width */
+    display: block;
+}
+
+@media (max-width: 767px) {
+	nav {
+	height: 140px !important;
+	width: 100%;
+	}
+	.openBtn {
+	font-size: 14px;
+	position: absolute;
+    left: 51%;
+    display: block;
+    margin-top:90px;
+	}
+	.refresh {
+	font-size: 14px !important;
+	position: absolute;
+    right: 51%;
+    display: block;
+    margin-top:90px;
+	}
+	img.navbar-brand {
+	height: 120px;
+	width: 250px;
+	left: 55% !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	nav {
+	height: 140px !important;
+	width: 100%;
+	}
+	.openBtn {
+	font-size: 12px;
+	position: absolute;
+    left: 51%;
+    display: block;
+    margin-top:90px;
+	}
+	.refresh {
+	font-size: 12px !important;
+	position: absolute;
+    right: 51%;
+    display: block;
+    margin-top:90px;
+	}
+    img.navbar-brand {
+	height: 120px;
+	width: 250px;
+	left: 55% !important;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	nav {
+	height: 180px !important;
+	width: 100%;
+	}
+	.openBtn {
+	font-size: 18px;
+	position: absolute;
+    left: 51%;
+    display: block;
+    margin-top:125px;
+	}
+	.refresh {
+	font-size: 18px !important;
+	position: absolute;
+    right: 51%;
+    display: block;
+    margin-top:125px;
+	}
+	img.navbar-brand {
+	margin-top: 3px;
+	}
+
+}
+@media (min-width: 1200px) { 
+
+}
+/* End Navbar */
+
+
+
+/********************  Nav Overlay */
+.overlay {
+	position: fixed !important;
+	bottom: 0;
+	left: 0; /*appear from left*/
+	width: 100%;
+	height: 0%;
+	background: rgba(0,0,0,.95);
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all 0.5s;
+}
+.overlay__content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.overlay p, .overlay a {
+	padding: 10px;
+	color: #ccc;
+	font-size: 20px;
+	display: block;
+
+}
+.overlay p:hover {
+	transition: 0.2s ease;
+	font-size: 22px;
+}
+.overlay a:hover {
+	color: white;
+} 
+.overlay .closeBtn {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-size: 50px;
+	text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 991px) { 
+	.overlay .closeBtn {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-size: 50px;
+}
+	.overlay p, .overlay a {
+	padding: 10px;
+	color: #ccc;
+	font-size: 25px;
+	text-decoration: none;
+	display: block;
+}
+	}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.overlay .closeBtn {
+	position: absolute;
+	top: 20px;
+	right: 150px;
+	font-size: 100px;
+}
+	.overlay p, .overlay a {
+	padding: 10px;
+	color: #ccc;
+	font-size: 50px;
+	text-decoration: none;
+	display: block;
+} 
+}
+@media (min-width: 1200px) { 
+
+}
+/* End navbar overlay */
+
+
+/********************  Gallery Section */
+
+.gallery-section {
+	width: 90%;
+	margin: auto;
+	margin-top: 115px;
+
+}
+.inner-width{
+	width: 100%;
+	margin: auto;
+}
+
+.gallery-section .gallery {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+
+}
+
+.gallery-section .image {
+	flex: 25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.gallery-section .image img {
+	width: 100%;
+	height: 100%;
+	padding: 4px;
+	border-radius: 10px;	
+	
+}
+.image {
+	filter: brightness(105%);
+}
+.gallery-section .image:hover {
+	transition: 0.5s ease;
+	transform: scale(0.99);
+	border-radius: 10px;
+	filter: brightness(107%);
+	border: 2px solid #eee;
+}
+
+
+/* responsive */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.gallery-section {
+	margin-top: 183px;
+	}
+
+}
+@media screen and (max-width: 960px){
+	.gallery-section .image {
+		flex: 25%;
+	}
+	.gallery-section {
+	margin-top: 143px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.gallery-section .image {
+		flex: 33.33%;
+	}
+	.gallery-section {
+	margin-top: 143px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.gallery-section .image {
+		flex: 33.33%;
+	}
+}
+
+/********************  Footer */
+/* End footer */
+
+/******************** Back to top */
+#button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: -10px;
+  right: -20px;
+  transition: background-color .3s;
+  z-index: 1000;
+  display: none;
+}
+ #button:hover {
+  color: white !important;
+}
+#button:active {
+  color: white !important;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #ccc;
+}
+
+@media (max-width: 767px) {
+	#button {
+      background-color: black;
+	  bottom: -20px;
+	  left: 70%;
+	}
+	#button::after {
+	  font-size: 1.5em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	#button {
+      background-color: black;
+	  bottom: -20px;
+	  left: 83%;
+	}
+	#button::after {
+	  font-size: 1.5em;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#button {
+      background-color: black;
+	  bottom: -20px;
+	  left: 86%;
+	}
+	#button::after {
+	  font-size: 1.5em;
+	}
+}
+@media (min-width: 1200px) { 
+
+}
+/* end back to top */
