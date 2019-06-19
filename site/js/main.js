@@ -42,17 +42,20 @@ $(".gallery").magnificPopup({
 
 	$(window).scroll(function(){
 		if($(this).scrollTop()>30){
-			$('#back').fadeIn();
+			$('#button').fadeIn();
 		} else{
-			$('#back').fadeOut();
+			$('#button').fadeOut();
 		}
 	});
 
-	$("#back").click(function(){
+	$("#button").click(function(){
 		$('html ,body').animate({scrollTop:0},0);
 
 	});
-function hola(){
+
+
+
+/*function hola(){
  		var bu = new Array(80);
 		bu = bu.sort(function() {return Math.random() - 0.5});
 				for(i=1; i<=120; i++){
@@ -70,4 +73,4 @@ function hola(){
 
 
     	}
-    	}
+    	}*/

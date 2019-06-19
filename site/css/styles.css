@@ -15,8 +15,6 @@ nav {
 	width: 100%;
 }
 
-
-
 nav.navbar {
 	background: black;
 	border: none;
@@ -26,22 +24,6 @@ nav.navbar {
 	top: 0;
 	left: 0;
 	border-radius: 0;
-}
-.secondary 
-{
-	background-image: linear-gradient(to right,#0B0B3B,black);
-	transition: all 1s ease-in !important;
-	box-shadow: 0px 0px 6px 0px #818181;
-
-}
-.secondary .navbar-nav > li > a {
-	color: white !important;
-
-}
-.secondary .navbar-nav > li > a:hover
-{
-	color: #818181 !important;
-	font-size: 14px !important;
 }
 .openBtn {
 	text-decoration: none !important;
@@ -65,22 +47,22 @@ nav.navbar {
     transition: 0.3s ease-in;
 
 }
-.btn {
+.refresh {
 	text-decoration: none !important;
 	position: absolute; 
 	margin-top: 38px;
-	font-size: 16px !important;
+	font-size: 18px !important;
 	letter-spacing: 0.08em;
 	color: #ccc;
 	font-family: 'Open Sans Condensed', sans-serif;
-	right: 88.5%;
+	right: 87.5%;
 	padding: 4px 15px;
 	border: 2px solid #ccc !important;
 	text-transform: uppercase;
 	font-weight: bold !important;
 	border-radius: 5px;
 }
-.btn:hover {
+.refresh:hover {
     color: black;
     background: white;
     border: 2px solid white !important;
@@ -99,35 +81,53 @@ img.navbar-brand {
 
 @media (max-width: 767px) {
 	nav {
-	height: 160px !important;
+	height: 140px !important;
 	width: 100%;
 	}
 	.openBtn {
 	font-size: 14px;
 	position: absolute;
-    left: 45%;
+    left: 51%;
     display: block;
-    margin-top:115px;
+    margin-top:90px;
+	}
+	.refresh {
+	font-size: 14px !important;
+	position: absolute;
+    right: 51%;
+    display: block;
+    margin-top:90px;
 	}
 	img.navbar-brand {
-	margin-top: 2px;
+	height: 120px;
+	width: 250px;
+	left: 55% !important;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
 	nav {
-	height: 160px !important;
+	height: 140px !important;
 	width: 100%;
 	}
 	.openBtn {
 	font-size: 12px;
 	position: absolute;
-    left: 46.5%;
+    left: 51%;
     display: block;
-    margin-top:115px;
+    margin-top:90px;
 	}
-	img.navbar-brand {
-	margin-top: 2px;
+	.refresh {
+	font-size: 12px !important;
+	position: absolute;
+    right: 51%;
+    display: block;
+    margin-top:90px;
+	}
+    img.navbar-brand {
+	height: 120px;
+	width: 250px;
+	left: 55% !important;
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -139,7 +139,14 @@ img.navbar-brand {
 	.openBtn {
 	font-size: 18px;
 	position: absolute;
-    left: 46.5%;
+    left: 51%;
+    display: block;
+    margin-top:125px;
+	}
+	.refresh {
+	font-size: 18px !important;
+	position: absolute;
+    right: 51%;
     display: block;
     margin-top:125px;
 	}
@@ -236,7 +243,7 @@ img.navbar-brand {
 .gallery-section {
 	width: 90%;
 	margin: auto;
-	margin-top: 120px;
+	margin-top: 115px;
 
 }
 .inner-width{
@@ -277,14 +284,28 @@ img.navbar-brand {
 
 
 /* responsive */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.gallery-section {
+	margin-top: 183px;
+	}
+
+}
 @media screen and (max-width: 960px){
 	.gallery-section .image {
 		flex: 25%;
+	}
+	.gallery-section {
+	margin-top: 143px;
+	}
 }
 
 @media screen and (max-width: 768px){
 	.gallery-section .image {
 		flex: 33.33%;
+	}
+	.gallery-section {
+	margin-top: 143px;
 	}
 }
 
@@ -292,40 +313,76 @@ img.navbar-brand {
 	.gallery-section .image {
 		flex: 33.33%;
 	}
+}
 
 /********************  Footer */
-
 /* End footer */
 
-/* Back to top 
-#back {
+/******************** Back to top */
+#button {
   display: inline-block;
   text-decoration: none;
-  background-color: #0B0B3B;
+  background-color: transparent;
   width: 50px;
   height: 50px;
   text-align: center;
   border-radius: 4px;
   margin: 30px;
   position: fixed;
-  bottom: 40px;
-  right: -10px;
+  bottom: -10px;
+  right: -20px;
   transition: background-color .3s;
   z-index: 1000;
   display: none;
 }
- #back:hover {
-  background-color: #1E1D1D;;
+ #button:hover {
+  color: white !important;
 }
-#back:active {
-  background-color: #1E1D1D;;
+#button:active {
+  color: white !important;
 }
-#back::after {
+#button::after {
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #fff;
-}*/
+  color: #ccc;
+}
+
+@media (max-width: 767px) {
+	#button {
+      background-color: black;
+	  bottom: -20px;
+	  left: 70%;
+	}
+	#button::after {
+	  font-size: 1.5em;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	#button {
+      background-color: black;
+	  bottom: -20px;
+	  left: 83%;
+	}
+	#button::after {
+	  font-size: 1.5em;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#button {
+      background-color: black;
+	  bottom: -20px;
+	  left: 86%;
+	}
+	#button::after {
+	  font-size: 1.5em;
+	}
+}
+@media (min-width: 1200px) { 
+
+}
+/* end back to top */
