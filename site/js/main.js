@@ -52,4 +52,22 @@ $(".gallery").magnificPopup({
 		$('html ,body').animate({scrollTop:0},0);
 
 	});
+function hola(){
+ 		var bu = new Array(80);
+		bu = bu.sort(function() {return Math.random() - 0.5});
+				for(i=1; i<=120; i++){
+			bu[i]=i;
+		}
+		bu = bu.sort(function() {return Math.random() - 0.5});
+ 	
+      AOS.init();
+		
+    	
+    	for( i = 1; i<=119; i++ ){
+    	
 
+    	document.write("<a href=\"images/"+bu[i]+".jpg\" class=\"image\"><img data-aos=\"zoom-in-right\" src=\"resized/"+bu[i]+".jpg\" id=\"capt\" <a/> ");
+
+
+    	}
+    	}

@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<title>Carmen Zamora Gallery</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<!-- pruebas -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -29,8 +33,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
 
+
 </head>
 <body>
+	<script>
+  AOS.init();
+</script>
 
 <!-------------------------------- Navbar -->
 	<nav class="navbar navbar-default">
@@ -38,7 +46,7 @@
 			<div class="navbar-header">
             <img class="navbar-brand logo" src="images/logo.png">
             <a href="#" class="openBtn" onclick="openNav()">About</a>
-            <a href="index.html" class="btn" onclick="">Random</a>
+            <a href="index.html" class="btn" onclick="hola()">Random</a>
     		</div>
     	</div>
 	</nav>
@@ -65,22 +73,27 @@
 <div class="gallery-section">
 	<div class="inner-width">
 	<div class="gallery">
+	<script src="js/aos.js"></script>
 
-		<script class="prueba1" id="prueba">
-		var bu = new Array(80);
+ 		<script>
+ 		var bu = new Array(80);
 		bu = bu.sort(function() {return Math.random() - 0.5});
 				for(i=1; i<=120; i++){
 			bu[i]=i;
 		}
 		bu = bu.sort(function() {return Math.random() - 0.5});
-    			for( i = 1; i<=119; i++ ){
+ 	
+      AOS.init();
+		
     	
+    	for( i = 1; i<=119; i++ ){
 
-    	document.write("<a href=\"images/"+bu[i]+".jpg\" class=\"image\"><img src=\"resized/"+bu[i]+".jpg\" <a/> ");
+    	document.write("<a href=\"images/"+bu[i]+".jpg\" class=\"image\"><img data-aos=\"zoom-in-right\" src=\"resized/"+bu[i]+".jpg\" id=\"capt\" <a/> ");
+
 
     	}
-	</script>
-	<!--<a href="images/1.jpg" data-lightbox="mygallery" class="image"><img src="rezised/1.jpg" alt=""></a>-->
+	</script> 
+	
 </div>
 </div>
 </div>
